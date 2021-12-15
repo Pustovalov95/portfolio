@@ -7,8 +7,9 @@ $(document).ready(function(){
       speed: 900,
       autoplay: true,
       autoplaySpeed: 2000,
-      prevArrow: '<button type="button" class="slick-prev"> <img src="../img/examples/arrow-l.png" alt="prev"> </button>',
-      nextArrow: '<button type="button" class="slick-next"> <img src="../img/examples/arrow-r.png" alt="next"> </button>',
+      arrows: true,
+      prevArrow: '<button type="button" class="slick-prev"><img src="../img/examples/arrow-l.png" alt="prev"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="../img/examples/arrow-r.png" alt="next"></button>',
       responsive: [
         {
           breakpoint: 767,
