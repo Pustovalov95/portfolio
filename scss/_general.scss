@@ -14,8 +14,9 @@
 
 .header {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
+    z-index: 2;
     &__navbar {
         width: 100%;
         
@@ -38,6 +39,15 @@
                     text-decoration: underline;
                     transition: 0.6s;
                 }
+            }
+            .theme {
+                border: none;
+                background-color: rgba(0,0,0,0);
+                padding: 5px 10px;
+                font-size: 18px;
+                color: white;
+                font-weight: 300;
+                cursor: pointer;
             }
         }
         &-hello {
@@ -228,9 +238,11 @@
             margin: 0 auto;
             margin-top: 20px;
             display: flex;
+            flex-direction: column;
             justify-content: space-around;
             width: 70%;
             .link {
+                margin: 15px 0px;
                 border: none;
                 background-color: rgba(0,0,0,0.75);
                 padding: 5px 10px;
@@ -254,45 +266,56 @@
         .slick-prev {
             position: absolute;
             top: 50%;
+            transform: translateY(-50%);
             left: -50px;
             width: 50px;
             height: auto;
             border: none;
             background-color: #fff;
-            z-index: 10;
+            z-index: 1;
             img {
                 width: 100%;
             }
             &:hover {
-                left: -75px;
+                left: -55px;
                 transition: 0.5s;
-                transform: scale(1.5);
+                transform: scale(1.4) translateY(-40%);
             }
         }
         .slick-next {
             position: absolute;
             top: 50%;
+            transform: translateY(-50%);
             right: -50px;
             width: 50px;
             height: auto;
             border: none;
             background-color: #fff;
-            z-index: 10;
+            z-index: 1;
             img {
                 width: 100%;
             }
             &:hover {
-                right: -75px;
+                right: -55px;
                 transition: 0.5s;
-                transform: scale(1.5);
+                transform: scale(1.4) translateY(-40%);
             }
         }
-
+    }
+}
+.certificate {
+    &__image {
+        width: 100%;
+        img {
+            width: 100%;
+        }
     }
 }
 
+
 .footer {
     background-color: rgba(0,0,0,0.75);
+    margin-top: 30px;
     padding: 10px 0 20px;
     &::before {
         content: '';
