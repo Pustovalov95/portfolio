@@ -36,7 +36,6 @@
                 font-weight: 300;
                 &:hover {
                     text-decoration: underline;
-                    transition: 0.6s;
                 }
             }
             .theme {
@@ -95,6 +94,7 @@
                 color: black;
                 text-decoration: none;
                 &:hover {
+                    transition: 0.5s;
                     color: chocolate;
                 }
             }
@@ -124,8 +124,8 @@
             }
         }
         &-item {
-            font-size: 26px;
-            line-height: 40px;
+            font-size: 20px;
+            line-height: 32px;
             font-weight: 300;
         }
     }
@@ -226,13 +226,7 @@
             text-align: center;
             margin-top: 10px;
             font-weight: 500;
-        }/* 
-        &-about {
-            font-size: 18px;
-            margin-top: 10px;
-            line-height: 23px;
-            font-weight: 300;
-        } */
+        }
         &-wrapper {
             margin: 0 auto;
             margin-top: 20px;
@@ -248,6 +242,7 @@
                 font-size: 18px;
                 color: #fff;
                 font-weight: 300;
+                transition: 0.5s;
                 a {
                     color: white;
                     text-decoration: none;
@@ -274,6 +269,7 @@
             border: none;
             background-color: #fff;
             z-index: 1;
+            transition: 0.5s;
             img {
                 width: 100%;
             }
@@ -293,6 +289,7 @@
             border: none;
             background-color: #fff;
             z-index: 1;
+            transition: 0.5s;
             img {
                 width: 100%;
             }
@@ -342,6 +339,7 @@
             background-color: rgba(255, 255, 255, 0.3);
             display: flex;
             align-items: center;
+            transition: 0.6s;
             img {
                 width: 60%;
                 height: auto;
@@ -414,6 +412,6 @@
 
     }
 }
-#wordpress, #uber, #game, #efood, #nivea, #email, #eFood, #stayhealthy, #foodsberry {
+#wordpress, #uber, #game, #efood, #nivea, #email, #eFood, #stayhealthy, #foodsberry, #agronomy {
     display: none; /* flex */
 }
