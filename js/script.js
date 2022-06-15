@@ -1,8 +1,8 @@
 $(document).ready(function(){
     $('.carousel').slick({
       infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 1,
+      slidesToShow: 3,
+      slidesToScroll: 2,
       adaptiveHeight: true,
       speed: 900,
       autoplay: true,
@@ -12,9 +12,17 @@ $(document).ready(function(){
       nextArrow: '<button type="button" class="slick-next"><img src="img/examples/arrow_r.png" alt="next"></button>',
       responsive: [
         {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
           breakpoint: 767,
           settings: {
-            slidesToShow: 1
+            slidesToShow: 1,
+            slidesToScroll: 1
           }
         },
         {
@@ -22,6 +30,7 @@ $(document).ready(function(){
           settings: {
             arrows: false,
             slidesToShow: 1,
+            slidesToScroll: 1,
             speed: 400,
             autoplay: true,
             autoplaySpeed: 2000
@@ -30,6 +39,7 @@ $(document).ready(function(){
       ]
     });
   });
+  
   const modal = document.querySelector('.modal'),
         wordpress = document.querySelector('#wordpress'),
         uber = document.querySelector('#uber'),
@@ -39,6 +49,7 @@ $(document).ready(function(){
         email = document.querySelector('#email'),
         stayhealthy = document.querySelector('#stayhealthy'),
         foodsberry = document.querySelector('#foodsberry'),
+        agronomy = document.querySelector('#agronomy'),
         wordpressBtn = document.querySelector('.wordpress-btn'),
         uberBtn = document.querySelector('.uber-btn'),
         gameBtn = document.querySelector('.game-btn'),
@@ -47,9 +58,10 @@ $(document).ready(function(){
         emailBtn = document.querySelector('.email-btn'),
         stayhealthyBtn = document.querySelector('.stayhealthy-btn'),
         foodsberryBtn = document.querySelector('.foodsberry-btn'),
+        agronomyBtn = document.querySelector('.agronomy-btn'),
         close = document.querySelectorAll('.modal__readme-close'),
-        modalArr = [wordpress, uber, game, eFood, nivea, email, stayhealthy, foodsberry],
-        btnArr = [wordpressBtn, uberBtn, gameBtn, eFoodBtn, niveaBtn, emailBtn, stayhealthyBtn, foodsberryBtn],
+        modalArr = [wordpress, uber, game, eFood, nivea, email, stayhealthy, foodsberry, agronomy],
+        btnArr = [wordpressBtn, uberBtn, gameBtn, eFoodBtn, niveaBtn, emailBtn, stayhealthyBtn, foodsberryBtn, agronomyBtn],
         btnTest = document.querySelectorAll('.btn-test');
 
 
