@@ -1,0 +1,418 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    display: block;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 15px;
+    
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    z-index: 2;
+    &__navbar {
+        width: 100%;
+        
+        z-index: 5;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 15px 0;
+
+        }
+        &-item {
+            list-style-type: none;
+            .link {
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+                font-weight: 300;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .theme {
+                border: none;
+                background-color: rgba(0,0,0,0);
+                padding: 5px 10px;
+                font-size: 18px;
+                color: white;
+                font-weight: 300;
+                cursor: pointer;
+            }
+        }
+        &-hello {
+            color: white;
+            font-size: 40px;
+            text-align: right;
+            transform: translate(-10%, 260%);
+        }
+    }
+}
+.promo {
+    padding-top: 70px;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 40%;
+        img {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__right {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        &-name {
+            font-size: 32px;
+            font-weight: 900;
+            span {
+                text-transform: uppercase;
+            }
+        }
+        &-profession {
+            font-size: 26px;
+            h2 {
+                font-weight: 500;
+            }
+        }
+        &-link {
+            font-size: 20px;
+            .link {
+                color: black;
+                text-decoration: none;
+                &:hover {
+                    transition: 0.5s;
+                    color: chocolate;
+                }
+            }
+            
+        }
+    }
+}
+.about {
+    padding-top: 10px;
+    &-wrapper {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+    }
+    &__left {
+        background-color: rgba(0,0,0,0.75);
+        width: 40%;
+        padding: 20px 10px;
+        box-shadow: 0px 16px 35px rgba(112, 144, 176, 0.2);
+        color: white;
+        &-title {
+            text-align: center;
+            font-size: 26px;
+            h3 {
+                font-weight: 500;
+            }
+        }
+        &-item {
+            font-size: 20px;
+            line-height: 32px;
+            font-weight: 300;
+        }
+    }
+    &__right {
+        width: 58%;
+        background-color: rgba(0,0,0,0.75);
+        box-shadow: 0px 16px 35px rgba(112, 144, 176, 0.2);
+        padding: 20px 10px;
+        color: white;
+        &-title {
+            text-align: center;
+            font-size: 26px;
+            h3 {
+                font-weight: 500;
+            }
+        }
+        &-experience {
+            margin-top: 20px;
+            .item {
+                font-size: 20px;
+                font-weight: 300;
+                span {
+                    font-weight: 500;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+
+}
+.skills {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    &__soft {
+        padding: 20px 10px;
+        width: 40%;
+        background-color: rgba(0,0,0,0.75);
+        font-size: 20px;
+        box-shadow: 0px 16px 35px rgba(112, 144, 176, 0.2);
+        color: white;
+        ul {
+            margin-top: 10px;
+            line-height: 30px;
+            font-weight: 300;
+        }
+        h3 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 500;
+        }
+    }
+    &__hard {
+        padding: 20px 10px;
+        width: 58%;
+        background-color: rgba(0,0,0,0.75);
+        font-size: 20px;
+        box-shadow: 0px 16px 35px rgba(112, 144, 176, 0.2);
+        color: white;
+        ul {
+            margin-top: 10px;
+            line-height: 30px;
+            font-weight: 300;
+        }
+        h3 {
+            text-align: center;
+            font-size: 28px;
+            font-weight: 500;
+        }
+    }
+}
+.examples {
+    padding: 40px 0;
+    &__title {
+        padding: 10px 0;
+        background-color: rgba(0,0,0,0.75);
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        h2 {
+            font-weight: 500;
+        }
+    }
+    .carousel {
+        position: relative;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        &-item {
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px 10px;
+        }
+        &-title {
+            font-size: 20px;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: 500;
+        }
+        &-wrapper {
+            margin: 0 auto;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 70%;
+            .link {
+                margin: 15px 0px;
+                border: none;
+                background-color: rgba(0,0,0,0.75);
+                padding: 5px 10px;
+                font-size: 18px;
+                color: #fff;
+                font-weight: 300;
+                transition: 0.5s;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 300;
+                }
+                &:hover {
+                    transition: 0.5s;
+                    transform: scale(1.2);
+                }
+            }
+        }
+        &-promo {
+            img {
+                width: 100%;
+            }
+        }
+        .slick-prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -50px;
+            width: 50px;
+            height: auto;
+            border: none;
+            background-color: #fff;
+            z-index: 1;
+            transition: 0.5s;
+            img {
+                width: 100%;
+            }
+            &:hover {
+                left: -55px;
+                transition: 0.5s;
+                transform: scale(1.4) translateY(-40%);
+            }
+        }
+        .slick-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -50px;
+            width: 50px;
+            height: auto;
+            border: none;
+            background-color: #fff;
+            z-index: 1;
+            transition: 0.5s;
+            img {
+                width: 100%;
+            }
+            &:hover {
+                right: -55px;
+                transition: 0.5s;
+                transform: scale(1.4) translateY(-40%);
+            }
+        }
+    }
+}
+.certificate {
+    &__image {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
+.footer {
+    background-color: rgba(0,0,0,0.75);
+    margin-top: 30px;
+    padding: 10px 0 20px;
+    &::before {
+        content: '';
+        display: block;
+        transform: translateY(-11px);
+        width: 100%;
+        height: 2px;
+        background-color: black;
+    }
+    &-title {
+        color: white;
+        h3 {
+            font-weight: 500;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 15px;
+        &-item {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: rgba(255, 255, 255, 0.3);
+            display: flex;
+            align-items: center;
+            transition: 0.6s;
+            img {
+                width: 60%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+            &:hover {
+                background-color: #fff;
+                transition: 0.6s;
+                box-shadow: 0px 16px 35px rgba(255, 255, 255, 0.3);
+            }
+        }
+    }
+        
+}
+.modal {
+    position: fixed;
+    top: 0;
+    background-color:rgba(0, 0, 0, 0.85);
+    height: 100vh;
+    width: 100%;
+    display: none; /* flex */
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    &__readme {
+        position: fixed;
+        min-height: 500px;
+        width: 50%;
+        display: block;
+        background-color: #fff;
+        height: auto;
+        z-index: 10;
+        &-close {
+            position: absolute;
+            right: -40px;
+            top: -10px;
+            font-size: 50px;
+            line-height: 42px;
+            color: #fff;
+            cursor: pointer;
+            z-index: 11;
+            &:hover {
+                color: red;
+            }
+        }
+        &-item {
+            top: 0;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            .title {
+                min-height: 20px;
+                text-align: center;
+                text-transform: uppercase;
+                
+            }
+            .description {
+                width: 100%;
+                min-height: 100px;
+                text-align: center;
+            }
+            .technology {
+                min-height: 100px;
+                width: 40%;
+            }
+        }
+
+    }
+}
+#wordpress, #uber, #game, #efood, #nivea, #email, #eFood, #stayhealthy, #foodsberry, #agronomy {
+    display: none; /* flex */
+}
